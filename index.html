@@ -30,17 +30,21 @@
           transition: 1s;
         }
 
-        .birthdayCard:hover {
+        .birthdayCard {
+          transition: transform 0.5s, box-shadow 0.5s;
+        }
+
+        .birthdayCard:active {
           transform: perspective(2500px) rotate(5deg);
           box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
             0 10px 100px rgba(0, 0, 0, 0.5);
         }
 
-        .birthdayCard:hover .cardFront {
+        .birthdayCard:active .cardFront {
           transform: rotateY(-160deg);
         }
 
-        .birthdayCard:hover .happy {
+        .birthdayCard:active .happy {
           visibility: hidden;
         }
 
