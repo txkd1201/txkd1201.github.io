@@ -34,17 +34,17 @@
           transition: transform 0.5s, box-shadow 0.5s;
         }
 
-        .birthdayCard:active {
+        .birthdayCard:clicked {
           transform: perspective(2500px) rotate(5deg);
           box-shadow: inset 100px 20px 100px rgba(0, 0, 0, 0.2),
             0 10px 100px rgba(0, 0, 0, 0.5);
         }
 
-        .birthdayCard:active .cardFront {
+        .birthdayCard:clicked .cardFront {
           transform: rotateY(-160deg);
         }
 
-        .birthdayCard:active .happy {
+        .birthdayCard:clicked .happy {
           visibility: hidden;
         }
 
